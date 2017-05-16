@@ -11,5 +11,6 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js/common/sunglife.min.js')
+   .sass('resources/assets/sass/app.scss', 'public/css/common/sunglife.css');
+mix.combine(['resources/assets/css/home/sunglife.css',] , 'public/css/home/sunglife_home.css');
